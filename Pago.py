@@ -1,11 +1,11 @@
 #Autor: Michelle Ojeda Manjarrez
 # Calcular los datos de pago semanal de un trabajador
 
-def pagoNormal (horasNormales, pagoHora):
+def calcularPagoNormal (horasNormales, pagoHora):
     pago = horasNormales * pagoHora
     return pago
 
-def pagoExtra (horasExtra, pagoHora):
+def calcularPagoExtra (horasExtra, pagoHora):
     extra = (pagoHora * .65 + pagoHora) * horasExtra
     return extra
 
@@ -14,8 +14,8 @@ def main ():
     extra = float (input ("Teclea las horas extras trabajadas: "))
     hora = float (input ("Teclea el pago por hora: "))
     
-    normalPago = pagoNormal (normal,hora)
-    extraPago = pagoExtra (hora, extra)
+    normalPago = calcularPagoNormal (normal,hora)
+    extraPago = calcularPagoExtra (hora, extra)
     totalPago = normalPago + extraPago
     
     print ("Pago normal: $%.02f" % normalPago)
