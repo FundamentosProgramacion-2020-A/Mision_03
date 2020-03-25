@@ -6,7 +6,7 @@ def calcularArea (baseMayor, baseMenor, altura):
     return area
 
 def calcularPerimetro (baseMayor, baseMenor, altura):
-    perimetro = (baseMenor + baseMayor + 2*altura)
+    perimetro = ((((((baseMayor-baseMenor)/2)**2) + (altura**2))**0.5) * 2) + (baseMayor+baseMenor)
     return perimetro
 
 def main ():
