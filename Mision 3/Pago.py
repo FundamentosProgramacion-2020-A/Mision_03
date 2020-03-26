@@ -1,14 +1,17 @@
 # Autor: Patricio León
 # Calcula el pago de un trabajador
 
+# Cómo caluclar su pago semanal
 def calcularPagoNormal(horasNormales, pagoPorHora):
     pagoSemanalNormal = horasNormales * pagoPorHora
     return pagoSemanalNormal
 
+# Cómo caluclar su pago extra
 def calcularPagoExtra (horasExtras, pagoPorHora):
     pagoSemanalExtra = (.65 * pagoPorHora + pagoPorHora) * horasExtras
     return pagoSemanalExtra
 
+# Programa Inicial
 def main():
     horasNormales = float(input("Teclea las horas normales trabajadas: "))
     horasExtras = float(input("Teclea las horas extras trabajadas: "))
